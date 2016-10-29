@@ -1,0 +1,22 @@
+{
+  "name": "mean-tutorial",
+  "version": "1.0.0",
+  "description": "Tutorial implementation based on https://thinkster.io/mean-stack-tutorial used to familiarize with Angular, MongoDB, and vanilla Express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mean",
+    "mongodb",
+    "nosql",
+    "rest",
+    "express",
+    "angular",
+    "js",
+    "javascript",
+    "node"
+  ],
+  "author": "Ben Johnston",
+  "license": "ISC"
+}
