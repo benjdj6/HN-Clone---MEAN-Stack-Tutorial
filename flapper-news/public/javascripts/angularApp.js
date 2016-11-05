@@ -62,6 +62,22 @@ app.factory('auth', ['$http', '$window', function($http, $window) {
         }
     };
 
+    auth.register = function(user) {
+        return $http.post('/register', user).success(function(data) {
+            auth.saveToken(data.token);
+        });
+    };
+
+    auth.logIn = function(user) {
+        return $http.post('/login', user).success(function(data) {
+            auth.saveToken(data.token);
+        });
+    };
+
+    auth.logOut = function() {
+        $window.localStorage.removeItem('flapper-news-token');
+    };
+
     return auth;
 }]);
 
