@@ -129,8 +129,8 @@ router.post('/register', function(req, res, next) {
         if (err) {
             return next(err);
         }
-
-        return res.json({ token: user.generageJWT() });
+        
+        return res.json({ token: user.generateJWT() });
     });
 });
 
