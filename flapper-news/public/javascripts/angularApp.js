@@ -176,8 +176,11 @@ app.controller('MainCtrl', [
             $scope.title = '';
             $scope.link = '';
         };
-        $scope.incrementUpvotes = function(post) {
+        $scope.incrementVotes = function(post) {
             posts.upvote(post);
+        };
+        $scope.decrementVotes = function(post) {
+            posts.downvote(post);
         };
 }]);
 
