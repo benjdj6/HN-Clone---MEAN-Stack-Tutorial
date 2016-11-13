@@ -122,7 +122,7 @@ app.factory('posts', ['$http', 'auth', function($http, auth) {
     };
 
     o.upvote = function(post) {
-        return $http.put('/posts/' + post._id + '/upvote', null, {
+        return $http.put('/posts/' + post._id + '/vote', null, {
             headers: {Authorization: 'Bearer ' + auth.getToken()}
         }).success(function(data) {
                 post.upvotes += 1;

@@ -73,7 +73,7 @@ router.post('/posts', auth, function(req, res, next) {
     });
 });
 
-router.put('/posts/:post/upvote', auth, function(req, res, next) {
+router.put('/posts/:post/vote', auth, function(req, res, next) {
     req.post.upvote(function(err, post){
         if(err) {
             return next(err);
