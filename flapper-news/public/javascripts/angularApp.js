@@ -164,7 +164,6 @@ app.controller('MainCtrl', [
     'posts',
     'auth',
     function($scope, posts, auth){
-        $scope.test = 'Hello world!';
         $scope.posts = posts.posts;
         $scope.isLoggedIn = auth.isLoggedIn;
         $scope.addPost = function(){
