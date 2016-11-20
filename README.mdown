@@ -1,3 +1,10 @@
+#HackerNews Clone/Flapper News Implementation
+
+
+###Summary
 This is my implementation of the MEAN Stack Tutorial outlined at: https://thinkster.io/mean-stack-tutorial
 
-My goal is to learn about Angular, MongoDB, and Express. In the past I've used React, Hapi, Restify, and PostgreSQL so these technologies will have varying degrees of familiarity. 
+I have also implemented the downvoting stretch-goal. 
+
+###Learned
+Through this tutorial project I learned about templating with Angular, using mongoose with Express, and implementation of json web tokens.
